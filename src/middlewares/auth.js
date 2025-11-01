@@ -5,6 +5,7 @@ export function auth(req, res, next) {
   const token = h.startsWith("Bearer ") ? h.slice(7) : null;
   if (!token) return res.status(401).json({ message: "Missing token" });
   try {
+    // dkjhgfg
     const secret = process.env.JWT_SECRET;
     if (!secret || secret.length < 32) throw new Error("JWT secret not set");
     const payload = jwt.verify(token, secret, {
