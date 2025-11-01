@@ -8,6 +8,11 @@ import { initChatSocket } from "./sockets/chat.socket.js";
 import { initRtcSocket } from "./sockets/rtc.socket.js";
 import * as BookingsService from "./services/bookings.service.js";
 
+
+
+//ergegetetetg
+
+
 // Validate environment variables
 const validatedEnv = env;
 
